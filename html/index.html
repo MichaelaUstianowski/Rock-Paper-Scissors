@@ -12,20 +12,23 @@
         <table>
           <tr>
             <th>Player</th>
-            <th>Computer</th>
+            <th >Computer</th>
           </tr>
           <tr>
-            <td>0</td>
-            <td>0</td>
+            <td id="playerscore">0</td>
+            <td id="compscore">0</td>
           </tr>
         </table>
-
-      <button type="button" id='R'>Rock</button>
-      <button type="button" id='P'>Paper</button>
-      <button type="button" id='S'>Scissors</button>
-
+        <h2>Pick rock, paper, or scissors!</h2>
+          <button type="button" id='R'>Rock</button>
+          <button type="button" id='P'>Paper</button>
+          <button type="button" id='S'>Scissors</button>
+          <h3>Your Choice</h3>
+            <p id='printPlayerChoice'>Player choice</p>
+          <h3>Computer Choice</h3>
+            <p id="printCompChoice">Computer choice</p>
       <p id="outcome" >Outcome</p>
-      <button type="button" id="reset">Reset</button>
+      <button type="button" id = "reset">Reset</button>
   </div>
   <script src="../js/scripts.js" defer></script>
   </body>
