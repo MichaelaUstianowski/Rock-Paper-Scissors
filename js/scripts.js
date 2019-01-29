@@ -45,6 +45,12 @@ window.addEventListener("load", () => {
       document.getElementById('printPlayerChoice').innerHTML = 'Player Choice';
     });
 
+    document.getElementById("play-again").addEventListener("click", function(){
+      document.getElementById('outcome').innerHTML = 'outcome';
+      document.getElementById('printCompChoice').innerHTML = 'Computer Choice';
+      document.getElementById('printPlayerChoice').innerHTML = 'Player Choice';
+    });
+
 //COMPARING PLAYER AND COMPUTER CHOICES
   //Determines the winner of the game by comparing the player's and the computer's choices
     function determineWinner(playerChoice){
