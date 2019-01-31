@@ -2,51 +2,72 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>\Rock Paper Scissors</title>
+    <title>Rock, Paper, Scissors</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
   </head>
   <body>
-  <div>
-    <h1> Rock Paper Scissors</h1>
-    <div>
-      <h2>How to play</h2>
+    <h1>Rock Paper Scissors</h1>
+    <div class="wrapper1">
+      <div class="instructions-section">
+        <h2 class="clickable"id="instructions-title" onclick="instructionsToggle()" data href="index.html">How to play</h2>
+        <div class='instructions'>
         <ul>
-          <li>Select your choice: rock, paper or scissors</li>
+          <li>Press the 'rock', 'paper' or 'scissors' button below</li>
           <li>The computer will select their choice</li>
           <li>Rock beats scissors</li>
           <li>Paper beats rock</li>
           <li>Scissors beats paper</li>
-          <li>If you win, your score will increase. If the computer wins, their score will increase</li>
+          <li>If you win, your score will increase</li>
+          <li>If the computer wins, their score will increase</li>
           <li>Press the reset button to reset both scores back to 0</li>
+          <li>Press "Play again", if you want to play another round against the computer</li>
+          <li>Press 'How to play' to remove these instructions and start playing</li>
         </ul>
-    </div>
-    <div>
-      <h2>Score Board</h2>
-        <table>
-          <tr>
-            <th>Player</th>
-            <th >Computer</th>
-          </tr>
-          <tr>
-            <td id="playerscore">0</td>
-            <td id="compscore">0</td>
-          </tr>
-        </table>
       </div>
-      <div>
+      </div>
+      <div class="scoreboard">
+      <h2>Score Board</h2>
+      <table>
+        <tr>
+          <th>Player</th>
+          <th >Computer</th>
+        </tr>
+        <tr>
+          <td id="playerscore">0</td>
+          <td id="compscore">0</td>
+        </tr>
+      </table>
+      </div>
+    </div>
+    <div class="game">
+      <div class="player-options">
         <h2>Pick rock, paper, or scissors!</h2>
           <button type="button" id='R'>Rock</button>
           <button type="button" id='P'>Paper</button>
           <button type="button" id='S'>Scissors</button>
         </div>
-        <div>
+        <div class="choices">
+          <div class="playerChoice">
           <h3>Your Choice</h3>
             <p id='printPlayerChoice'>Player choice</p>
+          </div>
+          <div class="compChoice">
           <h3>Computer Choice</h3>
             <p id="printCompChoice">Computer choice</p>
-      <p id="outcome" >Outcome</p>
+          </div>
+        </div>
+          <div class="results">
+            <h2 id="outcome" >Outcome<h2>
+          </div>
+          <div class="endGameButtons">
+          <div class="resetGame">
+            <button type="button" id = "reset">Reset</button>
+          </div>
+          <div class="playAgain">
+            <button type="button" id = "play-again">Play again</button>
+          </div>
     </div>
-      <button type="button" id = "reset">Reset</button>
-      <button type="button" id = "play-again">Play again</button>
   </div>
   <script src="../js/scripts.js"></script>
   </body>

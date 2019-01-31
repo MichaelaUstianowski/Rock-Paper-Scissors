@@ -1,0 +1,201 @@
+body {
+  /* background-color: #0099cc;
+  color: #f2f2f2; */
+  font-family: 'Roboto', sans-serif;
+}
+
+h1{
+  text-align: center;
+  font-size: 40px;
+}
+
+h2{
+  font-size: 35px;
+}
+
+.wrapper1{
+  display: grid;
+  grid-template-columns: 3fr, 1fr;
+}
+
+.instructions-section{
+  margin: 0 auto;
+}
+
+#instructions-title{
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition-duration: 1s; /* Safari */
+  transition-duration: 1s;
+}
+
+#instructions-title:hover{
+  color: blue;
+  opacity: 0.5;
+}
+
+li{
+  padding-bottom: 5px;
+}
+
+.scoreboard{
+  grid-column: 3/4;
+  justify-self:center;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  background-color: blue;
+  color: white;
+}
+
+.game{
+  display: grid;
+  grid-template-columns: 1fr;
+
+}
+
+.player-options{
+  text-align: center;
+}
+
+#R {
+  background-color: blue;
+  border: 2px solid blue;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 24px;
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
+}
+
+#R:hover {
+  border: 2px solid blue;
+  background-color: white;
+  color: black;
+}
+
+#P{
+  background-color: blue;
+  border: 2px solid blue;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 24px;
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
+}
+
+#P:hover {
+  border: 2px solid blue;
+  background-color: white;
+  color: black;
+}
+
+#S{
+  background-color: blue;
+  border: 2px solid blue;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 24px;
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
+}
+
+#S:hover {
+  border: 2px solid blue;
+  background-color: white;
+  color: black;
+}
+
+.choices{
+  display: grid;
+  grid-template-columns: 2fr, 2fr;
+}
+
+.playerChoice{
+  grid-column: 1/2;
+  justify-self: center;
+}
+
+.compChoice{
+  grid-column: 3/4;
+  justify-self: center;
+}
+
+#outcome{
+  text-align: center;
+  padding: 30px;
+}
+
+.endGameButtons{
+  display: grid;
+  grid-template-columns: 2fr, 2fr;
+}
+
+.resetGame{
+  grid-column: 1/2;
+  justify-self:center;
+}
+
+.playAgain{
+  grid-column: 3/4;
+  justify-self: center;
+}
+
+
+#reset{
+  background-color: red;
+  border: 2px solid red;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
+}
+
+#reset:hover {
+  border: 2px solid red;
+  background-color: white;
+  color: black;
+}
+
+
+#play-again{
+  background-color: green;
+  border: 2px solid green;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
+}
+
+#play-again:hover {
+  border: 2px solid green;
+  background-color: white;
+  color: black;
+}
